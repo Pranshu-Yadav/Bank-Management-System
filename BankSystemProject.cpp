@@ -125,7 +125,7 @@ int main() {
     char option;
 
     do {
-        generatedOTP = generateOTP(); // Generate a new OTP
+        generatedOTP = generateOTP(); 
         cout << "Generated OTP: " << generatedOTP << endl;
 
         cout << "Enter OTP received: ";
@@ -134,7 +134,7 @@ int main() {
         if (userOTP == generatedOTP) {
             cout << "OTP verification successful. Access granted!\n";
 
-            // Your bank management system logic here
+
             current_account c1;
 saving_account s1;
 char type;
@@ -218,7 +218,7 @@ cout<<"\nInvalid Account Selection";
 end:
 cout<<"\nThank You for Banking with us..";
 
-            // Exit loop on successful OTP verification
+        
             break;
         } else {
             cout << "Incorrect OTP. Access denied!\n";
